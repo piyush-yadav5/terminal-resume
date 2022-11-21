@@ -14,8 +14,8 @@
     <div id="terminal">
         <a id="before"></a>
     </div>
-    <div id="command">
-        <textarea type="text" id="texter" autofocus onkeyup="typer(this,event)"></textarea>
+    <div id="command" onclick="document.getElementById('texter').focus();">
+        <textarea type="text" id="texter" onkeyup="typer(this,event)" autofocus></textarea>
         <div id="liner">
             <span id="typer"></span><b class="cursor" id="cursor">█</b>
           </div>
