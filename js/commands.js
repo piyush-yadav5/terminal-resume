@@ -71,15 +71,13 @@ const education=`
 </table>`;
 
 const projects=`
-<div>
   <ul>
-    <li><strong>Xflix | Crio.Do</stromg> - Build backend for a video sharing platform using Node.js. <br>Implemented the functionality of searching by title, filtering using Genre and Content Rating including sorting by Views and Release Date.<br>
+    <li><strong>Xflix | Crio.Do</stromg> - Build backend for a video sharing platform using Node.js. Implemented the functionality of searching by title, filtering using Genre and Content Rating including sorting by Views and Release Date.<br>
     <b>Tech Stack: Node.js, Express.js, MongoDb, Mongoose</b></li>
     <li><strong>Qtrip | Crio.Do</Strong> - Created 3 different web pages for a travelling web app using HTML, CSS and Bootstrap and made them dynamic using Javascript.<br>
     <b>Tech Stack: HTML, CSS, JavaScript, Bootstrap, REST APIs, DOM Manipulation</b></li>
     <li><strong>Travel Behaviour Modelling | IIT Roorkee</strong> - Conducted a study to see the implementation of car-free days in the campus. <br>Formed a regression equation using MATLAB for predicting the driving factors for people's choices. Created a Heatmap to showcase the findings.</li>
-  </ul>
-</div>`;
+  </ul>`;
 
 const experience=`
 <div>

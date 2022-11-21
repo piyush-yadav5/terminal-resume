@@ -30,9 +30,6 @@ body {
   td {
     padding-left: 40px;
   }
-  li {
-    word-break:break-all;
-  }
   
   /* Cursor Start */
   .cursor {

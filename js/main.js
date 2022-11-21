@@ -28,7 +28,7 @@ function everyLine(text,time) {
         }
       }
     setTimeout(function () {
-        var next = document.createElement("p");
+        var next = document.createElement("div");
         next.innerHTML = t;
         before.parentNode.insertBefore(next,before);
       }, time);
@@ -102,8 +102,10 @@ function executor(cmd) {
 
 function addElement(name,time) {
     setTimeout(function () {
-        var next = document.createElement("p");
+        var next = document.createElement("div");
         next.innerHTML = name;
+        next.style="display:block";
         terminal.appendChild(next);
+        window.scrollTo(0,document.body.offsetHeight);
       }, time);
 }
