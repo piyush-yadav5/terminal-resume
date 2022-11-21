@@ -99,7 +99,6 @@ function executor(cmd) {
     }
 }
 
-
 function addElement(name,time) {
     setTimeout(function () {
         var next = document.createElement("div");
