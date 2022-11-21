@@ -90,7 +90,7 @@ function executor(cmd) {
             break;
         case "download":
             addElement(resume,100);
-            window.open("../assets/resume.pdf");
+            window.open("assets/resume.pdf");
             break;
         default:
             addElement(error,100);
