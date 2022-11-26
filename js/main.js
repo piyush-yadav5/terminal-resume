@@ -46,7 +46,7 @@ function enter(e) {
     if(e.keyCode==13) { //Enter is pressed
         executed_cmds.push(command.innerHTML);
         execPos=executed_cmds.length;
-        console.log(command.innerHTML.toLowerCase());
+        
         var temp=document.createElement("p");
         temp.classList.add("terminal-cmd");
         temp.innerHTML="terminal@piyush:~$ "+command.innerHTML;
