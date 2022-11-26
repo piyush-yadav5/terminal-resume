@@ -103,6 +103,7 @@ function executor(cmd) {
 function addElement(name,time) {
     setTimeout(function () {
         var next = document.createElement("div");
+        next.classList.add("typed-out");
         next.innerHTML = name;
         next.style="display:block";
         terminal.appendChild(next);
