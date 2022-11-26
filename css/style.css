@@ -9,7 +9,7 @@ body {
     min-width: 550px;
     color: #56ac81;
     background: #1e1c1b;
-    font-family: cursor, Courier, monospace;
+    font-family: monospace;
     overflow-x: hidden;
   }
   textarea {
@@ -52,11 +52,15 @@ body {
     color: #73abad;
   }
   #liner {
+    font-size: large;
+    padding-left: 0.2em;
     line-height: 1.3em;
     margin-top: 2px;
     padding-top: 5px;
   }
   #typer::before {
+    font-size: large;
+    padding-right: 0.2em;
     color: #56ac81;
     content: "terminal@piyush:~$ ";
   }
@@ -83,6 +87,7 @@ body {
   }
   #error{
     display: inline-block;
+    font-size: large;
     animation: shakeX;
     animation-duration: 1s;
   }
@@ -93,7 +98,8 @@ body {
   }
   .typed-out{
     /* display: flow-root; */
-    padding: 0 3px 0 0;
+    font-size: large;
+    padding: 1em 0 0 0.2em;
     word-wrap: break-word;
     
   }
