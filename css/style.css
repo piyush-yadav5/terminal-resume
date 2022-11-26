@@ -12,13 +12,13 @@ body {
     font-family: monospace;
     overflow-x: hidden;
   }
-  textarea {
+  input {
     opacity: 0;
     position: absolute;
   }
   .cmd-deco {
     color: #83bdc1;
-    text-shadow: 0 0 0.75px rgb(171, 210, 210);
+    text-shadow: 0 0 2px rgb(171, 210, 210);
   }
   td {
     padding-left: 40px;
@@ -63,12 +63,13 @@ body {
     padding-right: 0.2em;
     color: #56ac81;
     content: "terminal@piyush:~$ ";
+    animation: fadeIn 4s;
   }
   
   /* Cursor End */
   div {
     display: block;
-    line-height: 1.3em;
+    /* line-height: 1.3em; */
     margin: 0em;
     overflow: hidden;
     margin: 0em;
@@ -88,6 +89,9 @@ body {
   #error{
     display: inline-block;
     font-size: large;
+    color: rgb(220, 77, 77);
+    text-shadow: 0 0 3px rgb(199, 86, 86);
+    animation-delay: 1.5s;
     animation: shakeX;
     animation-duration: 1s;
   }
@@ -97,9 +101,23 @@ body {
     animation-duration: 3s;
   }
   .typed-out{
-    /* display: flow-root; */
+    display: block;
     font-size: large;
-    padding: 1em 0 0 0.2em;
+    padding: 0 0 0 0.2em;
     word-wrap: break-word;
-    
+    animation: lightSpeedInRight 1s;
+  }
+  .banner {
+    text-align: center;
+    animation: rubberBand;
+    animation-duration: 1s;
+  }
+  #subtxt {
+    display: inline-block;
+    animation: fadeIn 2s;
+  }
+  .terminal-cmd {
+    display: inline-block;
+    font-size: large;
+    /* padding: 0 0 1.5em 0; */
   }

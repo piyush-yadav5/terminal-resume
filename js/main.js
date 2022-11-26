@@ -29,13 +29,14 @@ function everyLine(text,time) {
       }
     setTimeout(function () {
         var next = document.createElement("div");
+        next.classList.add("banner");
         next.innerHTML = t;
         before.parentNode.insertBefore(next,before);
       }, time);
 }
 
 //Added Subtext
-addElement(subtext,990);
+addElement(subtext,200);
 
 
 cmd.addEventListener("keyup",enter);
@@ -46,7 +47,11 @@ function enter(e) {
         executed_cmds.push(command.innerHTML);
         execPos=executed_cmds.length;
         console.log(command.innerHTML.toLowerCase());
-        addElement("terminal@piyush:~$ "+command.innerHTML,0);
+        var temp=document.createElement("p");
+        temp.classList.add("terminal-cmd");
+        temp.innerHTML="terminal@piyush:~$ "+command.innerHTML;
+        terminal.appendChild(temp);
+        //addElement("terminal@piyush:~$ "+command.innerHTML,0);
         executor(command.innerHTML.trim().toLowerCase());
         command.innerHTML="";
         textarea.value="";
@@ -94,7 +99,6 @@ function executor(cmd) {
             break;
         default:
             addElement(error,100);
-            addElement(subtext,100);
             break;
     }
 }
@@ -105,7 +109,6 @@ function addElement(name,time) {
         var next = document.createElement("div");
         next.classList.add("typed-out");
         next.innerHTML = name;
-        next.style="display:block";
         terminal.appendChild(next);
         window.scrollTo(0,document.body.offsetHeight);
       }, time);

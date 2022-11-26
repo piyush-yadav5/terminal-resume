@@ -7,9 +7,10 @@ banner = [
   "╚═╝     ╚═╝   ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝       ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝  ╚═══╝",
 ];
 
-const error=`<span id="error">Command not found.</span>`;
+const error=`<span id="error">Command not found.</span>
+<p>For a list of available commands type <span class="cmd-deco" id="helper">'help'</span></p>`;
 
-const subtext=`For a list of available commands type <span class="cmd-deco" id="helper">'help'</span>`;
+const subtext=`<p id="subtxt">For a list of available commands type <span class="cmd-deco" id="helper">'help'</span></p>`;
 
 const help=`
 <table>
