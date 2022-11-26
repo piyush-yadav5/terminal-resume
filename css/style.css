@@ -83,3 +83,13 @@ body {
     box-shadow: inset 40rem 0 0 0 #54b3d6;
     color: white;
   }
+  #error{
+    display: inline-block;
+    animation: shakeX;
+    animation-duration: 1s;
+  }
+  #helper{
+    display: inline-block;
+    animation: heartBeat;
+    animation-duration: 3s;
+  }
