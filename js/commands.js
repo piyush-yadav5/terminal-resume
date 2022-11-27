@@ -98,11 +98,11 @@ const skills=`
 
 const contact=`
 <div>
--><b>Email: </b><a href="mailto:pyadav2@ce.iitr.ac.in" target="_blank">pyadav2@ce.iitr.ac.in</a><br>
+-><b>Email: </b><a class="link" href="mailto:pyadav2@ce.iitr.ac.in" target="_blank">pyadav2@ce.iitr.ac.in</a><br>
 <br>
--><b>LinkedIn: </b><a href="https://www.linkedin.com/in/piyush-yadav-a2590416a/" target="_blank">https://www.linkedin.com/in/piyush-yadav-a2590416a/</a><br>
+-><b>LinkedIn: </b><a class="link" href="https://www.linkedin.com/in/piyush-yadav-a2590416a/" target="_blank">https://www.linkedin.com/in/piyush-yadav-a2590416a/</a><br>
 </div>`;
 
 const resume=`
 <p>Downloading Resume....<br>
-If you are facing any problem, then click <a href="assets/resume.pdf" target="_blank">HERE</a> to download</p>`;
+If you are facing any problem, then click <a class="link" href="assets/resume.pdf" target="_blank">HERE</a> to download</p>`;
