@@ -110,8 +110,10 @@ body {
   }
   .typed-out{
     display: block;
+    text-align: justify;
     font-size: large;
-    padding: 0 0 0 0.2em;
+    margin-right: 20px;
+    padding: 0 10px 0 0px;
     word-wrap: break-word;
     animation: lightSpeedInRight 1s;
   }
