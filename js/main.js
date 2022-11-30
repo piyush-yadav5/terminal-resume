@@ -51,8 +51,8 @@ function enter(e) {
         temp.classList.add("terminal-cmd");
         temp.innerHTML="terminal@piyush:~$ "+command.innerHTML;
         terminal.appendChild(temp);
-        //addElement("terminal@piyush:~$ "+command.innerHTML,0);
-        executor(command.innerHTML.trim().toLowerCase());
+        
+        executor(command.innerHTML.toLowerCase());
         command.innerHTML="";
         textarea.value="";
     } else if(e.keyCode==38 && execPos!=0){ //Up key
@@ -72,6 +72,9 @@ function enter(e) {
 
 function executor(cmd) {
     switch (cmd) {
+        case(""):
+            addElement("",100);
+            break;
         case "help":
             addElement(help,100);
             break;

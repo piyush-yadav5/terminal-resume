@@ -1,5 +1,12 @@
+var inputField=document.getElementById("texter");
 var typeit=document.getElementById("typer");
 
-function typer(from, e) {
-    typeit.innerHTML=from.value;
+
+inputField.addEventListener("input",(event)=>{
+    typeit.innerHTML=event.target.value;
+});
+
+
+window.onclick=()=>{
+    inputField.focus();
 }
