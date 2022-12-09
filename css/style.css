@@ -19,6 +19,10 @@ body {
     background: #1e1c1b;
     font-family: monospace;
     overflow-x: hidden;
+    scrollbar-width: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
   }
   input {
     opacity: 0;
