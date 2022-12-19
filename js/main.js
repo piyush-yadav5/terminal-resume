@@ -52,7 +52,7 @@ function enter(e) {
         temp.innerHTML="terminal@piyush:~$ "+command.innerHTML;
         terminal.appendChild(temp);
         
-        executor(command.innerHTML.toLowerCase());
+        executor(command.innerHTML.toLowerCase().trim());
         command.innerHTML="";
         textarea.value="";
     } else if(e.keyCode==38 && execPos!=0){ //Up key
