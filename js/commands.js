@@ -7,7 +7,7 @@ banner = [
   "╚═╝     ╚═╝   ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝       ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝  ╚═══╝",
 ];
 
-const error=`<span id="error">Command not found.</span>
+const error=`<span id="error">Minions cannot understand this command.</span>
 <p>For a list of available commands type <span class="cmd-deco" id="helper">'help'</span></p>`;
 
 const subtext=`<p id="subtxt">For a list of available commands type <span class="cmd-deco" id="helper">'help'</span></p>`;
