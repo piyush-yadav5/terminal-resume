@@ -31,12 +31,12 @@ function everyLine(text,time) {
         var next = document.createElement("div");
         next.classList.add("banner");
         next.innerHTML = t;
-        before.parentNode.insertBefore(next,before);
+        terminal.appendChild(next);
       }, time);
 }
 
 //Added Subtext
-addElement(subtext,200);
+addElement(subtext,900);
 
 
 cmd.addEventListener("keyup",enter);
@@ -96,6 +96,9 @@ function executor(cmd) {
         case "contact":
             addElement(contact,100);
             break;
+        case "clear":
+            clear();
+            break;
         case "download":
             addElement(resume,100);
             window.open("assets/resume.pdf");
@@ -115,4 +118,12 @@ function addElement(name,time) {
         terminal.appendChild(next);
         window.scrollTo(0,document.body.offsetHeight);
       }, time);
+}
+
+const clear = () => {
+  setTimeout(()=>{
+    while(terminal.childElementCount>8){
+        terminal.removeChild(terminal.lastChild);
+    }
+  },100)
 }

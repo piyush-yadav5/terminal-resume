@@ -42,6 +42,10 @@ const help=`
   <td class="cmd-deco">download</td>
   <td>Download Resume</td>
 </tr>
+<tr>
+  <td class="cmd-deco">clear</td>
+  <td>Clear the current terminal</td>
+</tr>
 </table>`
 
 const whoami=`
