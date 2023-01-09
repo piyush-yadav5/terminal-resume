@@ -10,3 +10,4 @@ A basic terminal emulator used to present resume in an interactive form.
 * Cycle through the commands history using up ⬆️ and down ⬇️ arrow keys.
 * Display error message on incorrect command.
 * Auto scroll down console with command output.
+* Clear command to clear the terminal.
