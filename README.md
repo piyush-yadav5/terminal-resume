@@ -1,7 +1,7 @@
 # Terminal Resume
 A basic terminal emulator used to present resume in an interactive form.
 
-[Experience It!]https://piyush-yadav5.github.io/terminal-resume/
+[Experience It!](https://piyush-yadav5.github.io/terminal-resume/)
 
 
 
